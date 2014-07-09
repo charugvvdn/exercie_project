@@ -35,9 +35,6 @@ class CSVReader():
 			print error 
 			return False
 
-class UnitTest():
-	
-
 def main():
 	obj= CSVReader()
 	print obj.max_price()
