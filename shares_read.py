@@ -30,6 +30,10 @@ class CSVReader():
 							self.company[title]["price"] = int(row[self.company[title]['comp_count']+1])
 							self.company[title]["year"] = row[0]
 							self.company[title]["month"]= row[1]
+			
+			# deleting the non required key value pair of count
+			for c in self.company:
+				del(self.company[c]['comp_count'])
 			return self.company
 		except Exception as error:
 			print error 
