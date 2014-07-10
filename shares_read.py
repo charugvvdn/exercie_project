@@ -45,7 +45,7 @@ class CSVTest(unittest.TestCase):
 		filename = "test_shares_data.csv"
 		csvread = CSVReader(filename)
 		result = csvread.max_price()
-		print result
+		print "Output: ", result
 		expected = {'Company-E': {'price': 997, 'month': 'Oct', 'year': '2008'}, 'Company-D': {'price': 999, 'month': 'Apr', 'year': '2002'}, 'Company-C': {'price': 995, 'month': 'Jun', 'year': '1993'}, 'Company-B': {'price': 986, 'month': 'Mar', 'year': '2007'}, 'Company-A': {'price': 1000, 'month': 'Mar', 'year': '2000'}}
 		assert result ==  expected
 
